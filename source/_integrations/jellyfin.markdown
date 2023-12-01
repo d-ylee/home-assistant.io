@@ -38,3 +38,14 @@ Username:
 Password:
   description: The password of the supplied user.
 {% endconfiguration_basic %}
+
+{% include integrations/config_flow.md %}
+
+{% configuration_basic %}
+URL:
+  description: The URL of the Jellyfin server. Please supply the full URL including the protocol and optional webroot. For example `https://media.example.com`, `http://10.1.1.100:8096` or `http://home.example.com/jellyfin`.
+Username:
+  description: The Jellyfin user whose libraries you want to retrieve.
+Password:
+  description: The password of the supplied user.
+{% endconfiguration_basic %}
